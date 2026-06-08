@@ -26,7 +26,7 @@
     {
       "frame": 209,
       "center": [-80.19, -25.0],
-      "zoom": 2.2,
+      "zoom": 2.3,
       "pitch": 15,
       "bearing": -5,
       "easing": "quadInOut"
@@ -34,7 +34,7 @@
     {
       "frame": 313,
       "center": [-80.19, -25.0],
-      "zoom": 2.2,
+      "zoom": 2.7,
       "pitch": 18,
       "bearing": -2,
       "easing": "quadInOut"
@@ -42,14 +42,14 @@
     {
       "frame": 321,
       "center": [-80.19, -25.0],
-      "zoom": 2.2,
+      "zoom": 2.7,
       "pitch": 15,
       "bearing": -5
     },
     {
       "frame": 385,
       "center": [-80.19, -25.0],
-      "zoom": 2.2,
+      "zoom": 2.7,
       "pitch": 18,
       "bearing": -2,
       "easing": "quadInOut"
@@ -57,14 +57,29 @@
     {
       "frame": 396,
       "center": [-80.19, -25.0],
-      "zoom": 2.2,
+      "zoom": 2.7,
       "pitch": 15,
       "bearing": -5
     },
     {
       "frame": 464,
       "center": [-80.19, -25.0],
-      "zoom": 2.2,
+      "zoom": 2.7,
+      "pitch": 18,
+      "bearing": -2,
+      "easing": "quadInOut"
+    },
+    {
+      "frame": 478,
+      "center": [-80.19, -25.0],
+      "zoom": 2.7,
+      "pitch": 15,
+      "bearing": -5
+    },
+    {
+      "frame": 562,
+      "center": [-80.19, -25.0],
+      "zoom": 2.7,
       "pitch": 18,
       "bearing": -2,
       "easing": "quadInOut"
@@ -72,24 +87,47 @@
     {
       "frame": 578,
       "center": [-80.19, -25.0],
-      "zoom": 2.2,
+      "zoom": 2.7,
       "pitch": 15,
       "bearing": -5
     },
     {
       "frame": 650,
       "center": [-80.19, -25.0],
-      "zoom": 2.2,
+      "zoom": 2.7,
       "pitch": 18,
       "bearing": -2,
       "easing": "quadInOut"
     },
     {
-      "frame": 670,
+      "frame": 663,
       "center": [-80.19, -25.0],
-      "zoom": 2.2,
+      "zoom": 2.7,
+      "pitch": 15,
+      "bearing": -5
+    },
+    {
+      "frame": 769,
+      "center": [-80.19, -25.0],
+      "zoom": 2.7,
       "pitch": 18,
-      "bearing": -2
+      "bearing": -2,
+      "easing": "quadInOut"
+    },
+    {
+      "frame": 784,
+      "center": [-80.19, -25.0],
+      "zoom": 2.7,
+      "pitch": 15,
+      "bearing": -5
+    },
+    {
+      "frame": 850,
+      "center": [-80.19, -25.0],
+      "zoom": 2.7,
+      "pitch": 18,
+      "bearing": -2,
+      "easing": "quadInOut"
     }
   ],
   "mapHighlights": [

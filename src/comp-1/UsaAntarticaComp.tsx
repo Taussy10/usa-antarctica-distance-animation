@@ -9,6 +9,7 @@ import {
   Audio,
   staticFile,
   Img,
+  spring,
 } from "remotion";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
@@ -17,6 +18,7 @@ import antarcticaData from "../../../data/antarctica.json";
 import storyboard from "./storyboard.json";
 import timestamps from "./voiceover-usa-antartica-timestamps.json";
 import { COLORS } from "./color";
+import { SubscribeAnimation } from "./SubscribeAnimation";
 
 interface WordEntry {
   word: string;
@@ -102,6 +104,64 @@ function getCameraPosition(frame: number, kf: CameraKeyframe[]) {
 export const UsaAntarticaComp: React.FC = () => {
   const { width, height } = useVideoConfig();
   const frame = useCurrentFrame();
+
+  // --- POSITION CUSTOMIZATION: Change coordinates [longitude, latitude] below to move the Rank 4 label ---
+  const rankFourCoords: [number, number] = [-73.0, -25.0];
+
+  // Countdown based on the active scene travel times (counting up from 0 to target duration)
+  const getCountdownValue = (): { value: number; suffix: string } | null => {
+    // Walking (Scene 3 & 4): frames 217 to 313
+    if (frame >= 217 && frame <= 313) {
+      const val = Math.round(interpolate(frame, [217, 313], [0, 125], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp",
+      }));
+      return { value: val, suffix: " Days" };
+    }
+    // Car (Scene 5 & 6): frames 321 to 385
+    if (frame >= 321 && frame <= 385) {
+      const val = Math.round(interpolate(frame, [321, 385], [0, 6], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp",
+      }));
+      return { value: val, suffix: " Days" };
+    }
+    // Ship (Scene 7 & 8): frames 396 to 464
+    if (frame >= 396 && frame <= 464) {
+      const val = Math.round(interpolate(frame, [396, 464], [0, 17], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp",
+      }));
+      return { value: val, suffix: " Days" };
+    }
+    // Plane (Scene 9 & 10): frames 478 to 562
+    if (frame >= 478 && frame <= 562) {
+      const val = Math.round(interpolate(frame, [478, 562], [0, 14], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp",
+      }));
+      return { value: val, suffix: " Hours" };
+    }
+    // B2 Bomber (Scene 11 & 12): frames 578 to 650
+    if (frame >= 578 && frame <= 650) {
+      const val = Math.round(interpolate(frame, [578, 650], [0, 8], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp",
+      }));
+      return { value: val, suffix: " Hours" };
+    }
+    // Hypersonic Missile (Scene 13 & 14): frames 663 to 769
+    if (frame >= 663 && frame <= 769) {
+      const val = Math.round(interpolate(frame, [663, 769], [0, 30], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp",
+      }));
+      return { value: val, suffix: " Mins" };
+    }
+    return null;
+  };
+
+  const countdown = getCountdownValue();
   const mapContainer = useRef<HTMLDivElement>(null);
   const { delayRender, continueRender } = useDelayRender();
   const [handle] = useState(() => delayRender("Loading map..."));
@@ -319,6 +379,24 @@ export const UsaAntarticaComp: React.FC = () => {
 
   const bomberCoords = getBomberPosition();
 
+  // Missile position (Scene 13 & 14: frames 663 to 769)
+  const getMissilePosition = (): [number, number] => {
+    const start: [number, number] = [-80.19, 25.76];
+    const end: [number, number] = [-80.19, -75.0];
+    if (frame < 663) return start;
+    const p = interpolate(frame, [663, 769], [0, 1], {
+      extrapolateLeft: "clamp",
+      extrapolateRight: "clamp",
+      easing: Easing.bezier(0.25, 0.1, 0.25, 1.0)
+    });
+    return [
+      start[0] + p * (end[0] - start[0]),
+      start[1] + p * (end[1] - start[1])
+    ];
+  };
+
+  const missileCoords = getMissilePosition();
+
   useEffect(() => {
     if (!map) return;
 
@@ -438,12 +516,30 @@ export const UsaAntarticaComp: React.FC = () => {
     return { x: projected.x, y: projected.y };
   };
 
+  // Project hypersonic missile (Scene 13 & 14)
+  const getMissileProjected = () => {
+    if (!map || frame < 663 || frame > 769) return null;
+    const projected = map.project(missileCoords);
+    return { x: projected.x, y: projected.y };
+  };
+
+  // Project rank 4 label (visible from Scene 3 onwards, starting frame 217 to the end)
+  const getRankFourProjected = () => {
+    if (!map || frame < 217) return null;
+    const projected = map.project(rankFourCoords);
+    return { x: projected.x, y: projected.y };
+  };
+
   const usaLabel = getUsaLabelProjected();
   const manScreen = getManProjected();
   const carScreen = getCarProjected();
   const shipScreen = getShipProjected();
   const planeScreen = getPlaneProjected();
   const bomberScreen = getBomberProjected();
+  const missileScreen = getMissileProjected();
+  const rankFourScreen = getRankFourProjected();
+
+
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#000" }}>
@@ -605,6 +701,67 @@ export const UsaAntarticaComp: React.FC = () => {
           />
         </div>
       )}
+
+      {/* Hypersonic Missile Avatar */}
+      {missileScreen && (
+        <div
+          style={{
+            position: "absolute",
+            top: missileScreen.y,
+            left: missileScreen.x,
+            transform: "translate(-50%, -50%)",
+            pointerEvents: "none",
+            zIndex: 20,
+          }}
+        >
+          <Img
+            src={staticFile("images/hypersonic-missile.png")}
+            style={{
+              width: "260px",
+              height: "260px",
+              objectFit: "contain",
+              filter: "drop-shadow(0px 8px 16px rgba(0,0,0,0.6))"
+            }}
+          />
+        </div>
+      )}
+
+      {/* Dynamic Journey Countdown Overlay Style 2 */}
+      {rankFourScreen && countdown && (
+        <div
+          style={{
+            position: "absolute",
+            top: rankFourScreen.y,
+            left: rankFourScreen.x,
+            transform: "translate(-50%, -50%)",
+            pointerEvents: "none",
+            zIndex: 30,
+          }}
+        >
+          <span
+            style={{
+              fontFamily: "'Poppins', sans-serif",
+              fontWeight: 900,
+              fontSize: "140px",
+              lineHeight: 1,
+              letterSpacing: "0.02em",
+              color: "#ffffff",
+              WebkitTextStroke: "5px #000000",
+              textShadow: "8px 8px 0px #000000",
+              display: "inline-block",
+              whiteSpace: "nowrap",
+            }}
+          >
+            {countdown.value}
+            <span style={{ fontSize: "65px", verticalAlign: "super", marginLeft: "8px", WebkitTextStroke: "3px #000000" }}>
+              {countdown.suffix}
+            </span>
+          </span>
+        </div>
+      )}
+
+      {/* Youtube Subscribe lower-third */}
+      <SubscribeAnimation startFrame={784} />
 
       <Caption frame={frame} />
     </AbsoluteFill>
