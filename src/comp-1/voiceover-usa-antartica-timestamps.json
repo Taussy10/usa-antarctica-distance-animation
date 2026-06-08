@@ -1,0 +1,758 @@
+{
+  "audio_file": "voiceover-usa-antartica.mp3",
+  "fps": 30,
+  "words": [
+    {
+      "word": "Do",
+      "start": 0.0,
+      "end": 0.18,
+      "frame_start": 0,
+      "frame_end": 5
+    },
+    {
+      "word": "you",
+      "start": 0.18,
+      "end": 0.3,
+      "frame_start": 5,
+      "frame_end": 9
+    },
+    {
+      "word": "really",
+      "start": 0.3,
+      "end": 0.52,
+      "frame_start": 9,
+      "frame_end": 16
+    },
+    {
+      "word": "know",
+      "start": 0.52,
+      "end": 0.76,
+      "frame_start": 16,
+      "frame_end": 23
+    },
+    {
+      "word": "how",
+      "start": 0.76,
+      "end": 1.26,
+      "frame_start": 23,
+      "frame_end": 38
+    },
+    {
+      "word": "long",
+      "start": 1.26,
+      "end": 1.5,
+      "frame_start": 38,
+      "frame_end": 45
+    },
+    {
+      "word": "it",
+      "start": 1.5,
+      "end": 1.64,
+      "frame_start": 45,
+      "frame_end": 49
+    },
+    {
+      "word": "would",
+      "start": 1.64,
+      "end": 1.76,
+      "frame_start": 49,
+      "frame_end": 53
+    },
+    {
+      "word": "take",
+      "start": 1.76,
+      "end": 1.94,
+      "frame_start": 53,
+      "frame_end": 58
+    },
+    {
+      "word": "to",
+      "start": 1.94,
+      "end": 2.08,
+      "frame_start": 58,
+      "frame_end": 62
+    },
+    {
+      "word": "travel",
+      "start": 2.08,
+      "end": 2.38,
+      "frame_start": 62,
+      "frame_end": 71
+    },
+    {
+      "word": "from",
+      "start": 2.38,
+      "end": 2.58,
+      "frame_start": 71,
+      "frame_end": 77
+    },
+    {
+      "word": "the",
+      "start": 2.58,
+      "end": 2.7,
+      "frame_start": 77,
+      "frame_end": 81
+    },
+    {
+      "word": "US",
+      "start": 2.7,
+      "end": 3.08,
+      "frame_start": 81,
+      "frame_end": 92
+    },
+    {
+      "word": "to",
+      "start": 3.08,
+      "end": 3.42,
+      "frame_start": 92,
+      "frame_end": 103
+    },
+    {
+      "word": "Antarctica?",
+      "start": 3.42,
+      "end": 3.76,
+      "frame_start": 103,
+      "frame_end": 113
+    },
+    {
+      "word": "The",
+      "start": 4.1,
+      "end": 4.16,
+      "frame_start": 123,
+      "frame_end": 125
+    },
+    {
+      "word": "total",
+      "start": 4.16,
+      "end": 4.44,
+      "frame_start": 125,
+      "frame_end": 133
+    },
+    {
+      "word": "distance",
+      "start": 4.44,
+      "end": 4.76,
+      "frame_start": 133,
+      "frame_end": 143
+    },
+    {
+      "word": "between",
+      "start": 4.76,
+      "end": 5.12,
+      "frame_start": 143,
+      "frame_end": 154
+    },
+    {
+      "word": "them",
+      "start": 5.12,
+      "end": 5.36,
+      "frame_start": 154,
+      "frame_end": 161
+    },
+    {
+      "word": "is",
+      "start": 5.36,
+      "end": 5.56,
+      "frame_start": 161,
+      "frame_end": 167
+    },
+    {
+      "word": "around",
+      "start": 5.56,
+      "end": 5.78,
+      "frame_start": 167,
+      "frame_end": 173
+    },
+    {
+      "word": "15,000",
+      "start": 5.78,
+      "end": 6.54,
+      "frame_start": 173,
+      "frame_end": 196
+    },
+    {
+      "word": "kilometers.",
+      "start": 6.54,
+      "end": 6.96,
+      "frame_start": 196,
+      "frame_end": 209
+    },
+    {
+      "word": "If",
+      "start": 7.24,
+      "end": 7.32,
+      "frame_start": 217,
+      "frame_end": 220
+    },
+    {
+      "word": "you",
+      "start": 7.32,
+      "end": 7.42,
+      "frame_start": 220,
+      "frame_end": 223
+    },
+    {
+      "word": "start",
+      "start": 7.42,
+      "end": 7.58,
+      "frame_start": 223,
+      "frame_end": 227
+    },
+    {
+      "word": "walking,",
+      "start": 7.58,
+      "end": 7.92,
+      "frame_start": 227,
+      "frame_end": 238
+    },
+    {
+      "word": "it",
+      "start": 8.22,
+      "end": 8.28,
+      "frame_start": 247,
+      "frame_end": 248
+    },
+    {
+      "word": "would",
+      "start": 8.28,
+      "end": 8.38,
+      "frame_start": 248,
+      "frame_end": 251
+    },
+    {
+      "word": "take",
+      "start": 8.38,
+      "end": 8.54,
+      "frame_start": 251,
+      "frame_end": 256
+    },
+    {
+      "word": "around",
+      "start": 8.54,
+      "end": 8.78,
+      "frame_start": 256,
+      "frame_end": 263
+    },
+    {
+      "word": "125",
+      "start": 8.78,
+      "end": 9.54,
+      "frame_start": 263,
+      "frame_end": 286
+    },
+    {
+      "word": "days",
+      "start": 9.54,
+      "end": 9.98,
+      "frame_start": 286,
+      "frame_end": 299
+    },
+    {
+      "word": "to",
+      "start": 9.98,
+      "end": 10.2,
+      "frame_start": 299,
+      "frame_end": 306
+    },
+    {
+      "word": "reach.",
+      "start": 10.2,
+      "end": 10.42,
+      "frame_start": 306,
+      "frame_end": 313
+    },
+    {
+      "word": "If",
+      "start": 10.7,
+      "end": 10.8,
+      "frame_start": 321,
+      "frame_end": 324
+    },
+    {
+      "word": "you",
+      "start": 10.8,
+      "end": 10.9,
+      "frame_start": 324,
+      "frame_end": 327
+    },
+    {
+      "word": "travel",
+      "start": 10.9,
+      "end": 11.14,
+      "frame_start": 327,
+      "frame_end": 334
+    },
+    {
+      "word": "by",
+      "start": 11.14,
+      "end": 11.32,
+      "frame_start": 334,
+      "frame_end": 340
+    },
+    {
+      "word": "car,",
+      "start": 11.32,
+      "end": 11.58,
+      "frame_start": 340,
+      "frame_end": 347
+    },
+    {
+      "word": "it",
+      "start": 11.74,
+      "end": 11.8,
+      "frame_start": 352,
+      "frame_end": 354
+    },
+    {
+      "word": "would",
+      "start": 11.8,
+      "end": 11.92,
+      "frame_start": 354,
+      "frame_end": 358
+    },
+    {
+      "word": "take",
+      "start": 11.92,
+      "end": 12.08,
+      "frame_start": 358,
+      "frame_end": 362
+    },
+    {
+      "word": "around",
+      "start": 12.08,
+      "end": 12.32,
+      "frame_start": 362,
+      "frame_end": 370
+    },
+    {
+      "word": "six days.",
+      "start": 12.32,
+      "end": 12.84,
+      "frame_start": 370,
+      "frame_end": 385
+    },
+    {
+      "word": "If",
+      "start": 13.2,
+      "end": 13.32,
+      "frame_start": 396,
+      "frame_end": 400
+    },
+    {
+      "word": "you",
+      "start": 13.32,
+      "end": 13.42,
+      "frame_start": 400,
+      "frame_end": 403
+    },
+    {
+      "word": "take",
+      "start": 13.42,
+      "end": 13.58,
+      "frame_start": 403,
+      "frame_end": 407
+    },
+    {
+      "word": "a",
+      "start": 13.58,
+      "end": 13.7,
+      "frame_start": 407,
+      "frame_end": 411
+    },
+    {
+      "word": "cruise",
+      "start": 13.7,
+      "end": 13.92,
+      "frame_start": 411,
+      "frame_end": 418
+    },
+    {
+      "word": "ship,",
+      "start": 13.92,
+      "end": 14.22,
+      "frame_start": 418,
+      "frame_end": 427
+    },
+    {
+      "word": "it",
+      "start": 14.3,
+      "end": 14.38,
+      "frame_start": 429,
+      "frame_end": 431
+    },
+    {
+      "word": "would",
+      "start": 14.38,
+      "end": 14.48,
+      "frame_start": 431,
+      "frame_end": 434
+    },
+    {
+      "word": "take",
+      "start": 14.48,
+      "end": 14.62,
+      "frame_start": 434,
+      "frame_end": 439
+    },
+    {
+      "word": "around",
+      "start": 14.62,
+      "end": 14.82,
+      "frame_start": 439,
+      "frame_end": 445
+    },
+    {
+      "word": "17 days.",
+      "start": 14.82,
+      "end": 15.48,
+      "frame_start": 445,
+      "frame_end": 464
+    },
+   
+    {
+      "word": "If",
+      "start": 15.94,
+      "end": 16.02,
+      "frame_start": 478,
+      "frame_end": 481
+    },
+    {
+      "word": "you",
+      "start": 16.02,
+      "end": 16.1,
+      "frame_start": 481,
+      "frame_end": 483
+    },
+    {
+      "word": "travel",
+      "start": 16.1,
+      "end": 16.34,
+      "frame_start": 483,
+      "frame_end": 490
+    },
+    {
+      "word": "by",
+      "start": 16.34,
+      "end": 16.54,
+      "frame_start": 490,
+      "frame_end": 496
+    },
+    {
+      "word": "plane,",
+      "start": 16.54,
+      "end": 16.8,
+      "frame_start": 496,
+      "frame_end": 504
+    },
+    {
+      "word": "you",
+      "start": 16.98,
+      "end": 17.06,
+      "frame_start": 509,
+      "frame_end": 512
+    },
+    {
+      "word": "could",
+      "start": 17.06,
+      "end": 17.2,
+      "frame_start": 512,
+      "frame_end": 516
+    },
+    {
+      "word": "reach",
+      "start": 17.2,
+      "end": 17.36,
+      "frame_start": 516,
+      "frame_end": 521
+    },
+    {
+      "word": "Antarctica",
+      "start": 17.36,
+      "end": 17.74,
+      "frame_start": 521,
+      "frame_end": 532
+    },
+    {
+      "word": "in",
+      "start": 17.74,
+      "end": 17.98,
+      "frame_start": 532,
+      "frame_end": 539
+    },
+    {
+      "word": "about",
+      "start": 17.98,
+      "end": 18.12,
+      "frame_start": 539,
+      "frame_end": 544
+    },
+    {
+      "word": "14 hours.",
+      "start": 18.12,
+      "end": 18.72,
+      "frame_start": 544,
+      "frame_end": 562
+    },
+    
+    {
+      "word": "If",
+      "start": 19.26,
+      "end": 19.38,
+      "frame_start": 578,
+      "frame_end": 581
+    },
+    {
+      "word": "you",
+      "start": 19.38,
+      "end": 19.48,
+      "frame_start": 581,
+      "frame_end": 584
+    },
+    {
+      "word": "fly",
+      "start": 19.48,
+      "end": 19.7,
+      "frame_start": 584,
+      "frame_end": 591
+    },
+    {
+      "word": "in",
+      "start": 19.7,
+      "end": 19.86,
+      "frame_start": 591,
+      "frame_end": 596
+    },
+    {
+      "word": "a",
+      "start": 19.86,
+      "end": 19.96,
+      "frame_start": 596,
+      "frame_end": 599
+    },
+    {
+      "word": "B2",
+      "start": 19.96,
+      "end": 20.24,
+      "frame_start": 599,
+      "frame_end": 607
+    },
+    {
+      "word": "bomber,",
+      "start": 20.24,
+      "end": 20.52,
+      "frame_start": 607,
+      "frame_end": 616
+    },
+    {
+      "word": "it",
+      "start": 20.66,
+      "end": 20.74,
+      "frame_start": 620,
+      "frame_end": 622
+    },
+    {
+      "word": "would",
+      "start": 20.74,
+      "end": 20.84,
+      "frame_start": 622,
+      "frame_end": 625
+    },
+    {
+      "word": "take",
+      "start": 20.84,
+      "end": 20.98,
+      "frame_start": 625,
+      "frame_end": 629
+    },
+    {
+      "word": "around",
+      "start": 20.98,
+      "end": 21.18,
+      "frame_start": 629,
+      "frame_end": 635
+    },
+    {
+      "word": "eight hours.",
+      "start": 21.18,
+      "end": 21.66,
+      "frame_start": 635,
+      "frame_end": 650
+    },
+
+    {
+      "word": "And",
+      "start": 22.1,
+      "end": 22.18,
+      "frame_start": 663,
+      "frame_end": 665
+    },
+    {
+      "word": "if",
+      "start": 22.18,
+      "end": 22.28,
+      "frame_start": 665,
+      "frame_end": 668
+    },
+    {
+      "word": "you",
+      "start": 22.28,
+      "end": 22.38,
+      "frame_start": 668,
+      "frame_end": 671
+    },
+    {
+      "word": "launch",
+      "start": 22.38,
+      "end": 22.6,
+      "frame_start": 671,
+      "frame_end": 678
+    },
+    {
+      "word": "a",
+      "start": 22.6,
+      "end": 22.7,
+      "frame_start": 678,
+      "frame_end": 681
+    },
+    {
+      "word": "hypersonic",
+      "start": 22.7,
+      "end": 23.08,
+      "frame_start": 681,
+      "frame_end": 692
+    },
+    {
+      "word": "missile,",
+      "start": 23.08,
+      "end": 23.44,
+      "frame_start": 692,
+      "frame_end": 703
+    },
+    {
+      "word": "it",
+      "start": 23.66,
+      "end": 23.72,
+      "frame_start": 710,
+      "frame_end": 712
+    },
+    {
+      "word": "could",
+      "start": 23.72,
+      "end": 23.84,
+      "frame_start": 712,
+      "frame_end": 715
+    },
+    {
+      "word": "reach",
+      "start": 23.84,
+      "end": 24.0,
+      "frame_start": 715,
+      "frame_end": 720
+    },
+    {
+      "word": "Antarctica",
+      "start": 24.0,
+      "end": 24.46,
+      "frame_start": 720,
+      "frame_end": 734
+    },
+    {
+      "word": "in",
+      "start": 24.46,
+      "end": 24.68,
+      "frame_start": 734,
+      "frame_end": 740
+    },
+    {
+      "word": "less",
+      "start": 24.68,
+      "end": 24.86,
+      "frame_start": 740,
+      "frame_end": 746
+    },
+    {
+      "word": "than",
+      "start": 24.86,
+      "end": 25.04,
+      "frame_start": 746,
+      "frame_end": 751
+    },
+    {
+      "word": "30",
+      "start": 25.04,
+      "end": 25.3,
+      "frame_start": 751,
+      "frame_end": 759
+    },
+    {
+      "word": "minutes.",
+      "start": 25.3,
+      "end": 25.62,
+      "frame_start": 759,
+      "frame_end": 769
+    },
+    {
+      "word": "Anyway,",
+      "start": 26.12,
+      "end": 26.4,
+      "frame_start": 784,
+      "frame_end": 792
+    },
+    {
+      "word": "if",
+      "start": 26.54,
+      "end": 26.64,
+      "frame_start": 796,
+      "frame_end": 799
+    },
+    {
+      "word": "you",
+      "start": 26.64,
+      "end": 26.7,
+      "frame_start": 799,
+      "frame_end": 801
+    },
+    {
+      "word": "like",
+      "start": 26.7,
+      "end": 26.82,
+      "frame_start": 801,
+      "frame_end": 805
+    },
+    {
+      "word": "the",
+      "start": 26.82,
+      "end": 26.94,
+      "frame_start": 805,
+      "frame_end": 808
+    },
+    {
+      "word": "animation,",
+      "start": 26.94,
+      "end": 27.32,
+      "frame_start": 808,
+      "frame_end": 820
+    },
+    {
+      "word": "hit",
+      "start": 27.52,
+      "end": 27.64,
+      "frame_start": 826,
+      "frame_end": 829
+    },
+    {
+      "word": "that",
+      "start": 27.64,
+      "end": 27.8,
+      "frame_start": 829,
+      "frame_end": 834
+    },
+    {
+      "word": "button.",
+      "start": 27.8,
+      "end": 28.02,
+      "frame_start": 834,
+      "frame_end": 841
+    }
+  ]
+}

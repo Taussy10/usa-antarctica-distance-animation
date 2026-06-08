@@ -1,0 +1,109 @@
+{
+  "cameraKeyframes": [
+    {
+      "frame": 0,
+      "center": [-95.71, 37.09],
+      "zoom": 3.5,
+      "pitch": 0,
+      "bearing": 0
+    },
+    {
+      "frame": 30,
+      "center": [-80.19, 25.76],
+      "zoom": 5.0,
+      "pitch": 45,
+      "bearing": 15,
+      "easing": "quadInOut"
+    },
+    {
+      "frame": 120,
+      "center": [-40.0, -25.0],
+      "zoom": 3.0,
+      "pitch": 35,
+      "bearing": 10,
+      "easing": "quadInOut"
+    },
+    {
+      "frame": 209,
+      "center": [-80.19, -25.0],
+      "zoom": 2.2,
+      "pitch": 15,
+      "bearing": -5,
+      "easing": "quadInOut"
+    },
+    {
+      "frame": 313,
+      "center": [-80.19, -25.0],
+      "zoom": 2.2,
+      "pitch": 18,
+      "bearing": -2,
+      "easing": "quadInOut"
+    },
+    {
+      "frame": 321,
+      "center": [-80.19, -25.0],
+      "zoom": 2.2,
+      "pitch": 15,
+      "bearing": -5
+    },
+    {
+      "frame": 385,
+      "center": [-80.19, -25.0],
+      "zoom": 2.2,
+      "pitch": 18,
+      "bearing": -2,
+      "easing": "quadInOut"
+    },
+    {
+      "frame": 396,
+      "center": [-80.19, -25.0],
+      "zoom": 2.2,
+      "pitch": 15,
+      "bearing": -5
+    },
+    {
+      "frame": 464,
+      "center": [-80.19, -25.0],
+      "zoom": 2.2,
+      "pitch": 18,
+      "bearing": -2,
+      "easing": "quadInOut"
+    },
+    {
+      "frame": 578,
+      "center": [-80.19, -25.0],
+      "zoom": 2.2,
+      "pitch": 15,
+      "bearing": -5
+    },
+    {
+      "frame": 650,
+      "center": [-80.19, -25.0],
+      "zoom": 2.2,
+      "pitch": 18,
+      "bearing": -2,
+      "easing": "quadInOut"
+    },
+    {
+      "frame": 670,
+      "center": [-80.19, -25.0],
+      "zoom": 2.2,
+      "pitch": 18,
+      "bearing": -2
+    }
+  ],
+  "mapHighlights": [
+    {
+      "country": "usa",
+      "floodFill": [0, 1],
+      "borderDraw": [0, 1],
+      "color": "#00aaff"
+    },
+    {
+      "country": "antarctica",
+      "floodFill": [209, 230],
+      "borderDraw": [209, 230],
+      "color": "#cce6ff"
+    }
+  ]
+}
