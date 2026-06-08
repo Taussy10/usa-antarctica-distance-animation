@@ -283,6 +283,24 @@ export const UsaAntarticaComp: React.FC = () => {
 
   const shipCoords = getShipPosition();
 
+  // Plane position (Scene 9 & 10: frames 478 to 562)
+  const getPlanePosition = (): [number, number] => {
+    const start: [number, number] = [-80.19, 25.76];
+    const end: [number, number] = [-80.19, -75.0];
+    if (frame < 478) return start;
+    const p = interpolate(frame, [478, 562], [0, 1], {
+      extrapolateLeft: "clamp",
+      extrapolateRight: "clamp",
+      easing: Easing.bezier(0.25, 0.1, 0.25, 1.0)
+    });
+    return [
+      start[0] + p * (end[0] - start[0]),
+      start[1] + p * (end[1] - start[1])
+    ];
+  };
+
+  const planeCoords = getPlanePosition();
+
   // Bomber position (Scene 11 & 12: frames 578 to 650)
   const getBomberPosition = (): [number, number] => {
     const start: [number, number] = [-80.19, 25.76];
@@ -406,6 +424,13 @@ export const UsaAntarticaComp: React.FC = () => {
     return { x: projected.x, y: projected.y };
   };
 
+  // Project plane (Scene 9 & 10)
+  const getPlaneProjected = () => {
+    if (!map || frame < 478 || frame > 562) return null;
+    const projected = map.project(planeCoords);
+    return { x: projected.x, y: projected.y };
+  };
+
   // Project B2 bomber (Scene 11 & 12)
   const getBomberProjected = () => {
     if (!map || frame < 578 || frame > 650) return null;
@@ -417,6 +442,7 @@ export const UsaAntarticaComp: React.FC = () => {
   const manScreen = getManProjected();
   const carScreen = getCarProjected();
   const shipScreen = getShipProjected();
+  const planeScreen = getPlaneProjected();
   const bomberScreen = getBomberProjected();
 
   return (
@@ -527,6 +553,30 @@ export const UsaAntarticaComp: React.FC = () => {
               height: "180px",
               objectFit: "contain",
               filter: "drop-shadow(0px 6px 12px rgba(0,0,0,0.6))"
+            }}
+          />
+        </div>
+      )}
+
+      {/* Plane Avatar */}
+      {planeScreen && (
+        <div
+          style={{
+            position: "absolute",
+            top: planeScreen.y,
+            left: planeScreen.x,
+            transform: "translate(-50%, -50%)",
+            pointerEvents: "none",
+            zIndex: 20,
+          }}
+        >
+          <Img
+            src={staticFile("images/airplane.png")}
+            style={{
+              width: "180px",
+              height: "180px",
+              objectFit: "contain",
+              filter: "drop-shadow(0px 8px 16px rgba(0,0,0,0.6))"
             }}
           />
         </div>
